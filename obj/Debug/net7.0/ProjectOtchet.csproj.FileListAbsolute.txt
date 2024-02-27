@@ -1,0 +1,15 @@
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.csproj.AssemblyReference.cache
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.AssemblyInfoInputs.cache
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.AssemblyInfo.cs
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.csproj.CoreCompileInputs.cache
+E:\ProjectOtchet\bin\Debug\net7.0\ProjectOtchet.exe
+E:\ProjectOtchet\bin\Debug\net7.0\ProjectOtchet.deps.json
+E:\ProjectOtchet\bin\Debug\net7.0\ProjectOtchet.runtimeconfig.json
+E:\ProjectOtchet\bin\Debug\net7.0\ProjectOtchet.dll
+E:\ProjectOtchet\bin\Debug\net7.0\ProjectOtchet.pdb
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.dll
+E:\ProjectOtchet\obj\Debug\net7.0\refint\ProjectOtchet.dll
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.pdb
+E:\ProjectOtchet\obj\Debug\net7.0\ProjectOtchet.genruntimeconfig.cache
+E:\ProjectOtchet\obj\Debug\net7.0\ref\ProjectOtchet.dll
