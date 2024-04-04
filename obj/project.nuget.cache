@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Zu5y1wyL2C4iGlHcVfPpn2AH7Eh5v2Lcax3z1bS2+N41ANvxzzCpWIJzc3JpDv99uBAfHwH5vyvFY1ZsAYtdLQ==",
+  "dgSpecHash": "kjDsOhBLBgPdfEoVJaWnxwQYQ4ys38MPMbIsW2Q5eJYgUnEDa10l2s/8qmuIZfD+OybQv2dOKBJSbtg4Zf1CBg==",
   "success": true,
-  "projectFilePath": "E:\\ProjectOtchet\\ProjectOtchet.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\puhov\\Desktop\\SoftGIT\\IDLEtable\\ProjectOtchet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\puhov\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\puhov\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\puhov\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\puhov\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
