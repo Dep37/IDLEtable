@@ -4,7 +4,7 @@ cd BinRead\
 tar -xvzf plc.zip
 tar -xvzf usual-report.tgz 
 cd report\
-copy *.dump ..\..\*.xls
+copy *.dump ..\..\*.csv
 cd ..\
 del /S /Q *
 RMDIR /S /Q *
