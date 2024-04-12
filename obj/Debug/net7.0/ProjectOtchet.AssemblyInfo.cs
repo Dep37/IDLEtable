@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectOtchet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+946bc267400397b10a281c5ff6d077370bf7bdb6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+310f2263fdaa2fd11b5635a577eab1323b3eaaa6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectOtchet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectOtchet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

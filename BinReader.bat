@@ -5,6 +5,7 @@ tar -xvzf plc.zip
 tar -xvzf usual-report.tgz 
 cd report\
 copy *.dump ..\..\*.csv
+copy uptime ..\..\uptime.txt
 cd ..\
 del /S /Q *
 RMDIR /S /Q *
