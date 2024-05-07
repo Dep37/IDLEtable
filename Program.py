@@ -1,6 +1,7 @@
 import csv
+import matplotlib.pyplot as plt
 from subprocess import Popen
-p = Popen("BinReader.bat", cwd=r"IDLEtable")
+p = Popen("BinReader.bat")
 stdout, stderr = p.communicate()
 
 timestamp = []
@@ -13,11 +14,9 @@ lan12 = []
 lan2 = []
 lan22 = []
 
-# with open("IDLEtable\\uptime.txt", 'w') as u_file:
-#       uptime_file = u_file
-uptime_file = open('IDLEtable\\uptime.txt', 'r')
+uptime_file = open('uptime.txt', 'r')
 
-with open("IDLEtable\\perfmon.csv", encoding='ANSI') as r_file:
+with open("perfmon.csv", encoding='ANSI') as r_file:
     file_reader = csv.reader(r_file, delimiter = "	")
     count = 0
     for row in file_reader:
@@ -43,9 +42,21 @@ with open("IDLEtable\\perfmon.csv", encoding='ANSI') as r_file:
     lan12.reverse()
     lan2.reverse()
     lan22.reverse()
-    print(timestamp[-1])
-    print(idle[-1])
+    i = 1
+    while i < 20:
+          print(f'Time:{timestamp[-i]}')
+          i += 1
+    i = 1
+    while i < 20:
+          print(f'Idle:{idle[-i]}')
+          i += 1    
     print(f'Строк {count}')
     print(uptime_file.read())
 
     uptime_file.close()
+plt.plot(timestamp, idle)
+
+plt.axis([0,20,0,20])
+plt.ylabel('idle')
+plt.xlabel('timestamp')
+plt.show()
