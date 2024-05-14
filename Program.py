@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 from subprocess import Popen
-import test
+import Functions
 
 
 # Запуск скрипта распаковки архива
@@ -49,7 +49,7 @@ with open("perfmon.csv", encoding='ANSI') as r_file:
     # lan22.reverse()
     
 # Проверка распарсенных данных
-test.convertMs(timestamp)
+Functions.convertMs(timestamp)
 i = 1
 while i < 20:
     print(f'Time:{timestamp[-i]}')
