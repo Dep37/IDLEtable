@@ -50,6 +50,7 @@ with open("perfmon.csv", encoding='ANSI') as r_file:
     
 # Проверка распарсенных данных
 Functions.convertMs(timestamp)
+Functions.convertIDLE(idle)
 i = 1
 while i < 20:
     print(f'Time:{timestamp[-i]}')

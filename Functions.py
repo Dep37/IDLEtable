@@ -1,12 +1,21 @@
+
+import datetime
 # Функция конвертирования timestamp в DataTime
 def convertMs(millis):
     i = 0
     while i < len(millis):
-        mseconds = int(millis[-i]) % 1000
-        seconds = int(int(millis[-i]) / 1000) % 60
-        minutes = int(int(millis[-i]) / (1000 * 60)) % 60
-        hours = int(int(millis[-i]) / (1000 * 60 * 60)) % 24
-        millis[-i] = "{}:{}:{}.{}".format(hours, minutes, seconds, mseconds)
+        base_datetime = datetime.datetime(1970, 1, 1)
+        delta = datetime.timedelta(milliseconds=float(millis[-i])*1000)
+        dt = base_datetime + delta
+        millis[-i] = "{}".format(dt)
         i += 1
     print(millis[-1])
     return millis
+# Функция конвертирования IDLE в формат int
+def convertIDLE(idle):
+    i = 0
+    while i < len(idle):
+        idle[-i] = "{}".format(int(float(idle[-i])))
+        i += 1
+    print(idle[-1])
+    return idle
