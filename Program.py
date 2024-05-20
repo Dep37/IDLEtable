@@ -47,13 +47,19 @@ with open("perfmon.csv", encoding='ANSI') as r_file:
     # lan12.reverse()
     # lan2.reverse()
     # lan22.reverse()
-    
-# Проверка распарсенных данных
-Functions.convertMs(timestamp)
+
+# Массивы значений
+timestampDt = Functions.convertMs(timestamp.copy())
 Functions.convertIDLE(idle)
+listIdle = list(map(int, idle));
+listTimestamp = list(map(int, timestamp));
+
+
+   
+# Проверка распарсенных данных
 i = 1
 while i < 20:
-    print(f'Time:{timestamp[-i]}')
+    print(f'Time:{timestampDt[-i]}')
     i += 1
 i = 1
 while i < 20:
@@ -63,12 +69,17 @@ print(f'Строк {count}')
 print(uptime_file.read())
 
 # Пример графика
-uptime_file.close()
-plt.figure(figsize=(20,20))#создаю график
-plt.grid(True)
-plt.plot(timestamp, idle)
-#plt.axis([0,20,0,20])
-plt.ylabel('idle')
-plt.xlabel('timestamp')
-plt.show()
+# uptime_file.close()
+# plt.figure(figsize=(20,20))#создаю график
+# plt.grid(True)
+# plt.plot(timestampDT, idle)
+# #plt.axis([0,20,0,20])
+# plt.ylabel('idle')
+# plt.xlabel('timestampDT')
+# plt.show()
 
+
+
+print(Functions.nearestIndex(listTimestamp, 1705990030))
+print(listTimestamp[Functions.nearestIndex(listTimestamp, 1705990030)])
+print(listIdle[Functions.nearestIndex(listTimestamp, 1705990030)])
