@@ -19,3 +19,8 @@ def convertIDLE(idle):
         i += 1
     print(idle[-1])
     return idle
+
+# Функция поиска ближайшего значения
+def nearestIndex(list, target):
+    result = min(list, key = lambda x: abs(x - target)) if list else None
+    return list.index(result)
