@@ -1,7 +1,7 @@
-
 import datetime
-# Функция конвертирования timestamp в DataTime
-def convertMs(millis):
+
+# Функция конвертирования Timestamp в DataTime
+def convertToDt(millis):
     i = 0
     while i < len(millis):
         base_datetime = datetime.datetime(1970, 1, 1)
@@ -11,6 +11,10 @@ def convertMs(millis):
         i += 1
     print(millis[-1])
     return millis
+
+# Функция конвертирования DataTime в Timstamp
+
+
 # Функция конвертирования IDLE в формат int
 def convertIDLE(idle):
     i = 0

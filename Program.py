@@ -49,7 +49,7 @@ with open("perfmon.csv", encoding='ANSI') as r_file:
     # lan22.reverse()
 
 # Массивы значений
-timestampDt = Functions.convertMs(timestamp.copy())
+timestampDt = Functions.convertToDt(timestamp.copy())
 Functions.convertIDLE(idle)
 listIdle = list(map(int, idle));
 listTimestamp = list(map(int, timestamp));
