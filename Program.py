@@ -90,11 +90,14 @@ else: print("Проверка распарсенных данных отключ
 # plt.ylabel('idle')
 # plt.xlabel('timestampDT')
 # plt.show()
-firstTime = input("Введите время в формате, %Y-%m-%d %H:%M:%S: ")
+
+firstTime = "2024-01-30 04:45:50"
+
+# firstTime = input("Введите время в формате, %Y-%m-%d %H:%M:%S: ")
 convertTime = Functions.convertToTimestamp(firstTime)
 # Проверка поиска ближайшего значения
-print(f"Дата 2024-01-30 04:45:50 в мс: {convertTime}")
-print(f"Дата 2024-01-30 04:45:50 в DT: {Functions.convertToDt1(convertTime)}")
+# print(f"Дата 2024-01-30 04:45:50 в мс: {convertTime}")
+# print(f"Дата 2024-01-30 04:45:50 в DT: {Functions.convertToDt1(convertTime)}")
 indexTimestamp = Functions.nearestIndex(listTimestamp, convertTime)
 print(f"Индекс ближайшего значения Timstamp: {indexTimestamp}")
 print(f"Значение Timestamp по найденому индексу: {listTimestamp[indexTimestamp]}")
