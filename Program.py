@@ -51,22 +51,35 @@ with open("perfmon.csv", encoding='ANSI') as r_file:
 # Массивы значений
 timestampDt = Functions.convertToDt(timestamp.copy())
 Functions.convertIDLE(idle)
-listIdle = list(map(int, idle));
-listTimestamp = list(map(int, timestamp));
+
+print(f"Тип данных IDLE: {type(idle[0])}")
+# Функция 'convertIDLE' не конвертирует в 'int', остаётся всё 'str'
+
+
+
+listIdle = list(map(int, idle))
+# listIdle = idle
+listTimestamp = list(map(int, timestamp))
 
 
    
 # Проверка распарсенных данных
-i = 1
-while i < 20:
-    print(f'Time:{timestampDt[-i]}')
-    i += 1
-i = 1
-while i < 20:
-    print(f'Idle:{idle[-i]}')
-    i += 1    
-print(f'Строк {count}')
-print(uptime_file.read())
+chekParseData = False
+if chekParseData:
+    chekNumData = 20
+    print(f"Проверка распарсенных данных по первым {chekNumData} значениям")
+    
+    i = 1
+    while i < chekNumData:
+        print(f'Time:{timestampDt[-i]}')
+        i += 1
+    i = 1
+    while i < chekNumData:
+        print(f'Idle:{idle[-i]}')
+        i += 1    
+    print(f'Строк {count}')
+    print(uptime_file.read())
+else: print("Проверка распарсенных данных отключена")
 
 # Пример графика
 # uptime_file.close()
@@ -78,8 +91,8 @@ print(uptime_file.read())
 # plt.xlabel('timestampDT')
 # plt.show()
 
-
-
-print(Functions.nearestIndex(listTimestamp, 1705990030))
-print(listTimestamp[Functions.nearestIndex(listTimestamp, 1705990030)])
-print(listIdle[Functions.nearestIndex(listTimestamp, 1705990030)])
+# Проверка поиска ближайшего значения
+indexTimestamp = Functions.nearestIndex(listTimestamp, 1705990270)
+print(f"Индекс ближайшего значения Timstamp: {indexTimestamp}")
+print(f"Значение Timestamp по найденому индексу: {listTimestamp[indexTimestamp]}")
+print(f"Значение IDLE по найденому индексу: {listIdle[indexTimestamp]}")

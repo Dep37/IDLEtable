@@ -1,7 +1,7 @@
 echo off
 cls
 echo Starting BinRead.bat
-md BinRead
+md BinRead >nul 2>&1
 copy plc.bin BinRead\plc.zip >nul 2>&1
 cd BinRead\ >nul 2>&1
 tar -xvzf plc.zip >nul 2>&1
